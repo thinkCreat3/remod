@@ -1,0 +1,24 @@
+How to change screen size.
+
+Go to target app Android Manifest.
+Find <support-screens
+
+Help:
+
+<supports-screens android:resizeable=["true"| "false"]
+                  android:smallScreens=["true" | "false"]
+                  android:normalScreens=["true" | "false"]
+                  android:largeScreens=["true" | "false"]
+                  android:xlargeScreens=["true" | "false"]
+                  android:anyDensity=["true" | "false"]
+                  android:requiresSmallestWidthDp="integer"
+                  android:compatibleWidthLimitDp="integer"
+                  android:largestWidthLimitDp="integer"/>
+
+This method is ineffective since some games will work but not fully fit to screen.
+There must be something to do with res or smali.
+
+What i use;
+
+<supports-screens android:xlargeScreens=true
+                  
